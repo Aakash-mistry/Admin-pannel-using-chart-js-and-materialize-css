@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Task - 2 | HTML CSS page</title>
+		<link rel="stylesheet" href="stylesheet/materialize.min.css" />
+		<link rel="stylesheet" href="stylesheet/main.css" />
+		<link rel="stylesheet" href="stylesheet/Chart.css" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="upper-left-background"></div>
+
+		<div class="row main-section container-fluid">
+			<div class="col s12 l6">
+				<div class="card z-depth-0">
+					<div class="card-title main-title">
+						completion rate
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col s6 l4">
+							<canvas
+								id="pie-chart"
+								width="300"
+								height="300"
+							></canvas>
+						</div>
+						<div class="col s6 l8">
+							<div class="total-balance left">
+								Total Balance
+								<span class="grey-text">
+									aug 18 2018
+								</span>
+							</div>
+							<div class="right">
+								<div class="dollor-text">$13,750</div>
+							</div>
+						</div>
+					</div>
+					<div class="row week-section">
+						<div class="col s12 l6">
+							<div class="grey-text">This Week</div>
+							<div class="week-text">
+								234
+								<span class="percentage"
+									>36%
+									<i
+										class="material-icons green-text"
+									>
+										arrow_upward
+									</i></span
+								>
+							</div>
+						</div>
+						<div class="col s12 l6">
+							<span class="un-checkbox"></span>
+							<span class="un-checkbox"></span>
+							<span class="un-checkbox"></span>
+							<span class="checked"></span>
+							<span class="checked"></span>
+							<span class="checked"></span>
+							<span class="checked"></span>
+							<span class="month left">Feb 1</span>
+							<span class="month right">Mar 30</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card z-depth-0">
+					<div class="card-title main-title">
+						Total completions
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col s6 l4">
+							<canvas
+								id="pie-chart-two"
+								width="300"
+								height="300"
+							></canvas>
+						</div>
+						<div class="col s6 l8">
+							<div class="total-balance left">
+								credit avaliable
+								<span class="grey-text">
+									sep 12 2018
+								</span>
+							</div>
+							<div class="right">
+								<div class="dollor-text">$13,750</div>
+							</div>
+						</div>
+					</div>
+					<div class="row week-section">
+						<div class="col s12 l6">
+							<div
+								class="grey-text"
+								style="margin-top: 100px"
+							>
+								This Week
+							</div>
+							<div class="week-text">
+								$3487
+								<span class="percentage"
+									>44%
+									<i
+										class="material-icons green-text"
+									>
+										arrow_upward
+									</i></span
+								>
+							</div>
+						</div>
+						<div class="col s12 l6">
+							<canvas
+								id="mixed-chart"
+								width="1000"
+								height="500"
+							></canvas>
+
+							<span class="month left">Feb 1</span>
+							<span class="month right">Sep 30</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 l3">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-title main-title">
+							Total Expenses
+						</div>
+						<div class="second-row-dollor-item">
+							$65,650
+							<span class="green-text benefit-text"
+								>+876</span
+							>
+						</div>
+						<h6 class="lead">view statement</h6>
+						<canvas
+							id="mixed-chart-two"
+							width="500"
+							height="250"
+						></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-title main-title">
+							Total Expenses
+						</div>
+						<div class="second-row-dollor-item">
+							$65,650
+							<span class="green-text benefit-text"
+								>+876</span
+							>
+						</div>
+						<h6 class="lead">This has been great update</h6>
+						<canvas
+							id="mixed-chart-three"
+							width="500"
+							height="250"
+						></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-title main-title">
+							Amount due
+						</div>
+						<div class="second-row-dollor-item">
+							$5000
+							<span class="green-text benefit-text"
+								>-23</span
+							>
+						</div>
+						<h6 class="lead">65% lower growth</h6>
+						<canvas
+							id="mixed-chart-four"
+							width="500"
+							height="250"
+						></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-title main-title">
+							unpaid invoices
+						</div>
+						<div class="second-row-dollor-item">
+							$2,542
+							<span class="green-text benefit-text"
+								>+35</span
+							>
+						</div>
+						<h6 class="lead">view history</h6>
+						<canvas
+							id="mixed-chart-five"
+							width="500"
+							height="250"
+						></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 l6">
+				<div class="card">
+					<div class="row">
+						<div class="col s12 l4">
+							<canvas
+								id="doughnut-chart"
+								width="500"
+								height="500"
+							></canvas>
+						</div>
+						<div class="col s12 l8 p-5">
+							<h5 class="main-title">Active users</h5>
+							<div class="container-fluid mt-30">
+								67,550
+								<span class="lead">Email account</span>
+								<div class="progress grey">
+									<div
+										class="determinate purple"
+										style="width: 40%"
+									></div>
+								</div>
+							</div>
+							<div class="container-fluid mt-30">
+								67,550
+								<span class="lead">Requests</span>
+								<div class="progress grey">
+									<div
+										class="determinate teal"
+										style="width: 34%"
+									>
+										7/10
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l6">
+				<div class="card" style="padding: 10px !important">
+					<div class="row">
+						<div class="col s12 l5">
+							<h5 class="main-title">Amount Due</h5>
+							<div class="dollor-text-two">$5998</div>
+							<div class="lead">Milestone completed</div>
+							<div class="mt-30">
+								<h6>Payment for next week</h6>
+							</div>
+						</div>
+						<div class="col s12 l7">
+							<canvas
+								id="bar-chart"
+								width="800"
+								height="450"
+							></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12 l8">
+				<div class="card card-content">
+					<div class="card-title last-content main-title">
+						Realtime Statistics
+					</div>
+					<div class="lead-two">Updated at 8:32pm, Aug 2018</div>
+					<hr />
+					<div class="row">
+						<div class="col s12 l8">
+							<canvas
+								id="bar-chart-two"
+								width="1000"
+								height="500"
+								style="margin-top: 50px"
+							></canvas>
+						</div>
+						<div class="col s12 l4">
+							<h5 class="main-title">overview status</h5>
+							<div class="row">
+								<div class="col s8">
+									<h6 class="main-title">
+										Marketing
+									</h6>
+									<div class="percentage-two">
+										34%
+									</div>
+								</div>
+								<div class="col s4 center">
+									<div style="margin-top: 25px">
+										2018
+										<div class="badge red">
+											Mar
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s8">
+									<h6 class="main-title">
+										Development
+									</h6>
+									<div class="percentage-two">
+										49%
+									</div>
+								</div>
+								<div class="col s4 center">
+									<div style="margin-top: 25px">
+										2018
+										<div class="badge yellow">
+											DVR
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s8">
+									<h6 class="main-title">
+										Human Resources
+									</h6>
+									<div class="percentage-two">
+										75%
+									</div>
+								</div>
+								<div class="col s4 center">
+									<div style="margin-top: 25px">
+										2017
+										<div class="badge green">
+											H&R
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l4">
+				<div class="card">
+					<div class="card-content">
+						<div class="card-title last-content main-title">
+							Team members
+						</div>
+						<hr />
+						<ul class="collection">
+							<li class="collection-item avatar">
+								<img
+									src="https://cdn.iconscout.com/icon/free/png-512/avatar-372-456324.png"
+									alt=""
+									class="circle"
+								/>
+								<span class="title"
+									><b> Alex Terry</b></span
+								>
+								<p>Good website & navigation.</p>
+							</li>
+							<li class="collection-item avatar">
+								<img
+									src="https://www.kindpng.com/picc/m/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png"
+									alt=""
+									class="circle"
+								/>
+								<span class="title"
+									><b> Richard Coldwell </b></span
+								>
+								<p>Good website navigation</p>
+							</li>
+							<li class="collection-item avatar">
+								<img
+									src="https://www.pngarts.com/files/5/User-Avatar-PNG-Image.png"
+									alt=""
+									class="circle"
+								/>
+								<span class="title"
+									><b> Brent Parsons </b></span
+								>
+								<p>Good website navigation.</p>
+							</li>
+							<li class="collection-item avatar">
+								<img
+									src="https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png"
+									alt=""
+									class="circle"
+								/>
+								<span class="title"
+									><b> Cory Simmons </b></span
+								>
+								<p>Good website navigation</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="javascripts/jquery.min.js"></script>
+		<script src="javascripts/materialize.min.js"></script>
+		<script src="javascripts/Chart.js"></script>
+		<script src="javascripts/utils.js"></script>
+		<script src="javascripts/main.js"></script>
+	</body>
+</html>
